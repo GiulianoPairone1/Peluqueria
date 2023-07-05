@@ -4,6 +4,7 @@ import style from './index.module.css';
 import { motion } from 'framer-motion';
 import { AuthContext } from '../../context/Auth';
 import { Link } from 'react-router-dom';
+
 import { FaCity, FaTimes } from 'react-icons/fa';
 import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js';
 import { Step, StepLabel, Stepper } from '@material-ui/core';
@@ -30,6 +31,7 @@ const BuyForm = () => {
         if (!validateStep2()) {
             return;
           }
+
     }
     setActiveStep(prevStep => prevStep + 1);
 }
@@ -62,6 +64,7 @@ const BuyForm = () => {
   };
 
   return (
+
     <motion.div
       initial={{ opacity: 0 }}
       animate={{
@@ -85,7 +88,7 @@ const BuyForm = () => {
         </Stepper>
         
        
- 
+
 
         {activeStep === 0 && (
             
@@ -128,6 +131,9 @@ const BuyForm = () => {
               />
             </div>
             <div className={style.divcontainer}>
+
+        </form>
+
               <input
                 id="city"
                 type="text"
@@ -187,6 +193,7 @@ const BuyForm = () => {
             </Link>
           </div>
         </div>
+
         
       </form>
       <ToastContainer />

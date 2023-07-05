@@ -8,7 +8,9 @@
     background: #f0f2f5;
 }
 
+
 form {
+
     width: 398px;
     display: flex;
     flex-direction: column;
@@ -140,6 +142,7 @@ textarea:focus, input:focus, input[type]:focus {
 
 .mainDark a {
     color: #40b7d3;  
+
 }
 
 .buttons {
@@ -150,6 +153,10 @@ textarea:focus, input:focus, input[type]:focus {
     align-content: flex-start;
     flex-direction: column;
 }
+
+
+
+
 .com {
     width: 370px;
     border: 1px solid #501a8d;
